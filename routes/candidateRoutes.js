@@ -77,7 +77,7 @@ router.delete('/:candidateID', jwtAuthMiddleware, async (req, res) => {
     }
 })
 
-router.get('/vote/:candidateID', jwtAuthMiddleware, async (req, res) => {
+router.post('/vote/:candidateID', jwtAuthMiddleware, async (req, res) => {
     candidateID = req.params.candidateID;
     userId = req.user.id;
 
