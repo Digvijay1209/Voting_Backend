@@ -23,10 +23,11 @@ const candidateSchema=new mongoose.Schema({
                 ref:'User',
                 required:true
             },
-            votedAt:{
-                type:Date,
-                default:Date.now()
-            }
+            votedAt: {
+               type: Date,
+               default: Date.now 
+           }
+           
         }
      ],
 
